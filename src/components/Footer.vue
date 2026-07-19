@@ -2,11 +2,7 @@
   <footer class="footer">
 
     <p>
-      © {{ currentYear }} Shena Norren Pahugot. All rights reserved.
-    </p>
-
-    <p class="built-with">
-      Built with ❤️ using Vue 3 + Vite
+      © {{ currentYear }} PS. All rights reserved.
     </p>
 
     <a href="#hero" class="back-to-top">

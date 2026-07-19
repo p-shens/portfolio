@@ -58,7 +58,7 @@
     <h2 class="logo">PShens.</h2>
 
     <ul>
-      <li><a href="#home">Home</a></li>
+      <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -93,7 +93,7 @@ box-shadow:0 2px 10px rgba(0,0,0,.08);
 
 .logo{
 
-color:#2563eb;
+color:var(--primary);
 
 }
 
@@ -111,7 +111,7 @@ a{
 
 text-decoration:none;
 
-color:#333;
+color:#111827;
 
 font-weight:600;
 
@@ -121,7 +121,7 @@ transition:.3s;
 
 a:hover{
 
-color:#2563eb;
+color:var(--primary);
 
 }
 

@@ -1,8 +1,8 @@
 <template>
   <Navbar />
   <Hero />
+   <About />
   <Skill />
-  <About />
   <Projects />
   <Contact />
   <Footer />

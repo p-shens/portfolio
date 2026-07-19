@@ -14,7 +14,6 @@
             :status="project.status"
             :description="project.description"
             :tech="project.tech"
-            :demoUrl="project.demoUrl"
             :githubUrl="project.githubUrl"
         />
 
@@ -28,49 +27,66 @@
 
 import ProjectCard from "./ProjectCard.vue"
 import lostFound from '../assets/projects/lf.png'
+import portfolio from '../assets/projects/portfolio.png'
+import crud from '../assets/projects/PHP.png'
 
 const projects = [
 
 {
     id:1,
 
-    image: lostFound,
+    image:portfolio,
 
-    title:"Lost & Found Management System",
+    title:"Personal Portfolio (2026)",
 
-    status: "Completed",
+    status: "In Progress",
 
-    description:"A responsive web application that allows students and staff to report, search, and track lost and found items.",
+    description:"This portfolio was built using Vue.js to showcase my projects, skills, and learning journey as a web developer. It also helped me strengthen my frontend development skills by building a responsive and modern website from scratch.",
 
-    tech: [
-  "Vue.js",
-  "PHP",
-  "MySQL"
-],
-demoUrl:"#",
+    tech: [ "Vue.js" ],
 
-    githubUrl:"https://github.com/yourusername/lost-found"
+    demoUrl:"#",
+
+    githubUrl:"https://github.com/ACP-FlyHigh/portfolio"
 },
 
 {
     id:2,
 
-    image:"https://picsum.photos/600/400?2",
+    image: lostFound,
 
-    title:"Personal Portfolio",
+    title:"Lost & Found Management System | Capstone Project (2024)",
 
-    status: "In Progress",
+    status: "Completed",
 
-    description:"A responsive portfolio website showcasing my projects and skills.",
+    description:"This was our capstone project in 2024, created to help students and staff easily report, search for, and track lost and found items on campus. I focused mainly on the backend development, database design, and application logic, while also helping connect the backend to the frontend.",
 
     tech: [
-  "Vue.js",
-  "PHP",
-  "MySQL"
-],
-demoUrl:"#",
+        "Vue.js",
+        "CSS",
+        "Quasar",
+        "PHP",
+        "MySQL"
+    ],
 
-    githubUrl:"https://github.com/yourusername/lost-found"
+    githubUrl:"https://github.com/ACP-FlyHigh/lost-and-found-system-backend"
+},
+
+{
+    id: 3,
+
+    image: crud,
+
+    title:"CRUD Project (2024)",
+
+    status: "Archived",
+
+    description:"This is a CRUD web application built with native PHP using the MVC pattern. It includes user authentication, password encryption, and database backup functionality.",
+    tech: [ "HTML", "CSS", "PHP" ],
+
+    demoUrl:"#",
+
+    githubUrl:"https://github.com/yourusername/"
 }
 
 ]
@@ -90,6 +106,8 @@ padding:60px 10%;
 text-align:center;
 
 margin-bottom:40px;
+
+color:var(--primary);
 
 }
 

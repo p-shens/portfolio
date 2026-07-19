@@ -1,73 +1,71 @@
 <template>
+  <section id="skills" class="skills">
 
-<section id="skills" class="skills">
+    <h1>Technologies I Work With</h1>
 
-    <h1>Technical Skills</h1>
+    <p class="subtitle">
+      These are the technologies I've used throughout my academic projects and personal learning journey.
+    </p>
 
     <div class="skills-grid">
 
-        <div
-            v-for="category in skillCategories"
-            :key="category.title"
-            class="skill-card"
-        >
+      <div
+        v-for="skill in skills"
+        :key="skill.name"
+        class="skill-card"
+      >
 
-            <h2>{{ category.title }}</h2>
+        <i :class="skill.icon"></i>
 
-            <div class="badges">
+        <h2>{{ skill.name }}</h2>
 
-                <span
-                    v-for="skill in category.skills"
-                    :key="skill"
-                    class="badge"
-                >
-                    {{ skill }}
-                </span>
+        <p>{{ skill.description }}</p>
 
-            </div>
-
-        </div>
+      </div>
 
     </div>
 
-</section>
-
+  </section>
 </template>
 
 <script setup>
 
-const skillCategories = [
+const skills = [
 
 {
-    title:"Frontend",
-
-    skills:[
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Vue.js"
-    ]
+    name: "PHP",
+    icon: "devicon-php-plain colored",
+    description: "I use PHP to build the backend of my projects. I'm comfortable with native PHP and organizing my code using the MVC pattern, and I'm still learning more as I build new projects."
 },
 
 {
-    title:"Backend",
-
-    skills:[
-        "PHP",
-        "MySQL"
-    ]
+    name: "MySQL",
+    icon: "devicon-mysql-plain colored",
+    description: "I enjoy working with databases and designing tables. Most of my projects use MySQL to store and manage data."
 },
 
 {
-    title:"Tools",
+    name: "Vue.js",
+    icon: "devicon-vuejs-plain colored",
+    description: "I use Vue.js to build responsive and interactive user interfaces. I'm still learning more about Vue, and building this portfolio has helped me improve a lot."
+},
 
-    skills:[
-        "Git",
-        "GitHub",
-        "VS Code",
-        "XAMPP",
-        "Microsoft Excel"
-    ]
+{
+    name: "JavaScript",
+    icon: "devicon-javascript-plain colored",
+    description: "I use JavaScript to make my web applications interactive and connect the frontend with the backend."
+},
+
+{
+    name: "Express.js",
+    icon: "devicon-express-original",
+    description: "I have basic knowledge of Express.js from our college projects and I'm excited to learn more."
+},
+
+{
+    name: "Node.js",
+    icon: "devicon-nodejs-plain colored",
+    description: "I learned the basics of Node.js and used it together with Express.js in one of our school projects."
 }
 
 ]
@@ -78,63 +76,101 @@ const skillCategories = [
 
 .skills{
 
-padding:80px 10%;
+    padding:100px 10%;
 
 }
 
 .skills h1{
 
-text-align:center;
+    text-align:center;
 
-margin-bottom:50px;
+    font-size:42px;
+
+    margin-bottom:15px;
+
+    color:var(--primary);
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#94A3B8;
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    line-height:1.7;
 
 }
 
 .skills-grid{
 
-display:grid;
+    display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 
-gap:30px;
+    gap:30px;
 
 }
 
 .skill-card{
 
-background:white;
+    background:var(--card);
 
-padding:30px;
+    padding:35px;
 
-border-radius:15px;
+    border-radius:18px;
 
-box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
 
-}
-
-.badges{
-
-display:flex;
-
-flex-wrap:wrap;
-
-gap:10px;
-
-margin-top:20px;
+    border:1px solid rgba(255,255,255,.08);
 
 }
 
-.badge{
+.skill-card:hover{
 
-background:#2563eb;
+    transform:translateY(-8px);
 
-color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
 
-padding:8px 16px;
+}
 
-border-radius:30px;
+.skill-card i{
 
-font-size:14px;
+    font-size:55px;
+
+    margin-bottom:20px;
+
+    display:block;
+
+}
+
+.skill-card h2{
+
+    margin-bottom:15px;
+
+    color:white;
+
+}
+
+.skill-card p{
+
+    color:#CBD5E1;
+
+    line-height:1.7;
+
+}
+
+@media(max-width:768px){
+
+.skills{
+
+padding:80px 8%;
+
+}
 
 }
 

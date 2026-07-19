@@ -9,9 +9,27 @@
     <div class="project-content">
       <h2>{{ title }}</h2>
 
-      <span class="status">
+      <span
+    v-if="status === 'Completed'"
+    class="status completed"
+>
     {{ status }}
 </span>
+
+<span
+    v-else-if="status === 'In Progress'"
+    class="status in-progress"
+>
+    {{ status }}
+</span>
+
+<span
+    v-else-if="status === 'Archived'"
+    class="status in-archived"
+>
+    {{ status }}
+</span>
+
 
       <p>{{ description }}</p>
 
@@ -27,15 +45,6 @@
      </div>
 
     <div class="buttons">
-
-    <a
-        :href="demoUrl"
-        target="_blank"
-         rel="noopener noreferrer"
-        class="btn primary"
-    >
-        Live Demo
-    </a>
 
     <a
         :href="githubUrl"
@@ -59,7 +68,6 @@ const {
     title,
     description,
     tech,
-    demoUrl,
     githubUrl,
     status
 } = defineProps({
@@ -67,7 +75,6 @@ const {
     title: String,
     description: String,
     tech: Array,
-    demoUrl: String,
     githubUrl: String,
     status: String
 })
@@ -97,13 +104,14 @@ const {
   padding: 24px;
 }
 
-.project-content h2 {
+.project-content h2 { 
   margin-bottom: 12px;
 }
 
 .project-content p {
   color: #555;
   line-height: 1.6;
+  text-align: justify;
 }
 
 .tech {
@@ -168,7 +176,7 @@ transform:translateY(-3px);
 
 }
 .project-content h2 {
-  color: black;
+  color: #111827;
   margin-bottom: 12px;
 }
 
@@ -187,7 +195,47 @@ transform:translateY(-3px);
 
     font-weight:600;
 
-    margin-bottom:16px;
+    margin-bottom:cpx;
 }
+.status{
+
+    display:inline-block;
+
+    padding:6px 12px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom: 16px;
+
+}
+
+.completed{
+
+    background:#DCFCE7;
+
+    color:#166534;
+
+}
+
+.in-progress{
+
+    background:#ebc1c1;
+
+    color:#802d27;
+
+}
+.in-archived{
+
+    background:#f3f4f6;
+
+    color:#374151;
+
+}
+
+
 
 </style>

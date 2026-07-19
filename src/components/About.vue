@@ -5,7 +5,7 @@
     <div class="about-content">
 
 <div class="hero-image">
-      <img src="" alt="Profile Picture" />
+      <img src="../assets/images/d.jpg" alt="Profile Picture" />
     </div>
 
     <div class="text-content">
@@ -13,10 +13,14 @@
         <h2>About Me</h2>
 
         <p class="intro">
-            I am a Bachelor of Science in Information Technology graduate who
-            enjoys building responsive and user-friendly web applications.
-            I am continuously improving my skills in Vue.js, JavaScript,
-            PHP, and modern web development.
+            Hello! I'm Shena Norren, a Bachelor of Science in Information Technology graduate. 
+            My journey started with backend development using PHP and MySQL, 
+            where I discovered my interest in databases and application logic. 
+            Over time, I expanded my skills to frontend development with Vue.js and continue learning 
+            by building personal projects like this portfolio. During my college journey, 
+            I also gained experience in project documentation and project management. 
+            I'm always eager to humbly contribute my skills to meaningful projects while continuing to learn.
+
         </p>
     </div>
     </div>
@@ -29,6 +33,8 @@
 
                 <p>
                     Bachelor of Science in Information Technology
+                    <br>
+                    <b> Cordova Public College </b>
                 </p>
 
             </div>
@@ -47,14 +53,18 @@
 
             <div class="card">
 
-                <h3>❤️ Passion</h3>
+                <h3>❤️ What I can do</h3>
 
-                <p>
-                    Web Development
+                <p class="last-card">
+                    Create simple and responsive web interfaces
                     <br>
-                    Learning New Technologies
+                    Design relational databases using MySQL
                     <br>
-                    Problem Solving
+                    Build basic backend logic with PHP
+                    <br>
+                    Continuously learn and improve my skills
+                    <br>
+                    Work well with and motivate teammates
                 </p>
 
             </div>
@@ -103,13 +113,15 @@ h2{
 
 .intro{
 
-    color:#CBD5E1;
+    color: #CBD5E1;
 
     line-height:1.8;
 
     margin-bottom:60px;
 
     max-width:750px;
+
+    text-align: justify;
 
 }
 
@@ -150,7 +162,11 @@ h2{
 .card p{
 
     line-height:1.8;
+    color: #CBD5E1;
 
+}
+.last-card {
+    font-size: 14.5px;
 }
 
 @media (max-width:900px){

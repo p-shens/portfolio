@@ -5,7 +5,7 @@
     <div class="hero-text">
 
       <p class="greeting">
-        👋 Hello, I'm
+        👋 This is,
       </p>
 
       <h1>
@@ -16,13 +16,6 @@
       <h2 class="title">
         {{ titles[currentIndex] }}
       </h2>
-
-      <p class="description">
-        Passionate about building responsive, user-friendly, and modern web
-        applications using Vue.js, JavaScript, PHP, MySQL, HTML, and CSS.
-        I enjoy learning new technologies and solving real-world problems
-        through clean and efficient code.
-      </p>
 
       <div class="buttons">
 
