@@ -47,7 +47,7 @@ const projects = [
 
     demoUrl:"#",
 
-    githubUrl:"https://github.com/ACP-FlyHigh/portfolio"
+    githubUrl:"https://github.com/p-shens/portfolio"
 },
 
 {
@@ -69,7 +69,7 @@ const projects = [
         "MySQL"
     ],
 
-    githubUrl:"https://github.com/ACP-FlyHigh/lost-and-found-system-backend"
+    githubUrl:"https://github.com/p-shens/lost-and-found-system-backend"
 },
 
 {

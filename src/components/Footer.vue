@@ -2,7 +2,7 @@
   <footer class="footer">
 
     <p>
-      © {{ currentYear }} PS. All rights reserved.
+      © {{ currentYear }} PShens. All rights reserved.
     </p>
 
     <a href="#hero" class="back-to-top">
