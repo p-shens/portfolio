@@ -20,7 +20,7 @@
       <div class="buttons">
 
         <a
-          href="/resume.pdf"
+          href="/PAHUGOT SHENA NORREN.pdf"
           download
           class="btn primary"
         >
