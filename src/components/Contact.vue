@@ -42,7 +42,7 @@ const contacts = [
     url: "63+ 9329123656"
   },
   {
-    icon: "💼",
+    icon: "🌐",
     label: "Facebook",
     url: "https://www.facebook.com/p.shens29"
   }

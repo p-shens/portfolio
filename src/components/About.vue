@@ -53,7 +53,7 @@
 
             <div class="card">
 
-                <h3>❤️ What I can do</h3>
+                <h3> What I can do</h3>
 
                 <p class="last-card">
                     Create simple and responsive web interfaces
